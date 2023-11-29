@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Ask the user about their day
+echo "How is your day today? (good/bad): "
+read response
+
+# Use a case statement to provide a response
+case $response in
+  "good")
+    echo "That's great! I'm glad to hear that."
+    ;;
+  "bad")
+    echo "I'm sorry to hear that. Hopefully, things get better."
+    ;;
+  *)
+    echo "Invalid response. Please enter 'good' or 'bad'."
+    ;;
+esac
